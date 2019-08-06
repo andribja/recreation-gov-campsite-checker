@@ -1,3 +1,11 @@
+# Updates to original script
+
+Added email functionality (inspired by https://github.com/craigshall/yosemite-camping)
+Set your campsites, dates and email in camping_params and make it executable. 
+See params_example for a configuration example.
+
+For mail to work, you must set up Postfix first.
+
 # Campsite Availability Scraping
 
 **This has been updated to work with the new recreation.gov site and API!!!**
