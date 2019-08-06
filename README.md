@@ -4,7 +4,7 @@ Added email functionality (inspired by https://github.com/craigshall/yosemite-ca
 Set your campsites, dates and email in camping_params and make it executable. 
 See params_example for a configuration example.
 
-For mail to work, you must set up Postfix first.
+For mail to work, you must set up Postfix first. Instructions for gmail on Ubuntu: https://kifarunix.com/configure-postfix-to-use-gmail-smtp-on-ubuntu-18-04/
 
 # Campsite Availability Scraping
 
