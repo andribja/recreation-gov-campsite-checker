@@ -6,3 +6,6 @@ __pycache__
 /twitter_credentials.json
 *.swp
 *egg-info
+parks.txt
+result.txt
+camping_params
