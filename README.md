@@ -1,8 +1,8 @@
 # Updates to original script
 
 Added email functionality (inspired by https://github.com/craigshall/yosemite-camping)
-Set your campsites, dates and email in camping_params and make it executable. 
-See params_example for a configuration example.
+Set your campsites, dates and email in a file, make it executable and put it in the 'params' folder.
+See `params_example` for a configuration example.
 
 For mail to work, you must set up Postfix first. Instructions for gmail on Ubuntu: https://kifarunix.com/configure-postfix-to-use-gmail-smtp-on-ubuntu-18-04/
 
