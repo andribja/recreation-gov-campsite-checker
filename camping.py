@@ -187,7 +187,7 @@ def consecutive_nights(available, nights):
                 datetime.fromordinal(r[start_index]), format_string=INPUT_DATE_FORMAT
             )
             end_nice = format_date(
-                datetime.fromordinal(r[start_index + nights - 1]),
+                datetime.fromordinal(r[start_index + nights - 1] + 1),
                 format_string=INPUT_DATE_FORMAT,
             )
             long_enough_consecutive_ranges.append((start_nice, end_nice))
