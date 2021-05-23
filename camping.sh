@@ -7,9 +7,9 @@ do
     # Source params file
     . $file
 
-    python3 camping.py --start-date $START_DATE --end-date $END_DATE $PARKS > result.txt
-    RESULTS=`grep -E '^.*[^\n]+.*$' result.txt | wc -l`
-    if [ $RESULTS -gt "0" ];
+    python3 camping.py --start-date $START_DATE --end-date $END_DATE --parks $PARKS --nights $NIGHTS > result.txt
+    exit_code=$?
+    if [ $exit_code == 0 ];
     then
         echo "RESULTS FOUND - "`date`
         # Email result

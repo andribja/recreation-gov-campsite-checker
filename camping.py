@@ -182,12 +182,12 @@ def consecutive_nights(available, nights):
         # Skip ranges that are too short.
         if len(r) < nights:
             continue
-        for start_index in range(0, len(r) - nights):
+        for start_index in range(0, len(r) - nights + 1):
             start_nice = format_date(
                 datetime.fromordinal(r[start_index]), format_string=INPUT_DATE_FORMAT
             )
             end_nice = format_date(
-                datetime.fromordinal(r[start_index + nights]),
+                datetime.fromordinal(r[start_index + nights - 1]),
                 format_string=INPUT_DATE_FORMAT,
             )
             long_enough_consecutive_ranges.append((start_nice, end_nice))
@@ -237,9 +237,7 @@ def output_human_output(parks):
                 args.end_date.strftime(INPUT_DATE_FORMAT),
             )
         )
-    else:
-        print("There are no campsites available :(")
-    print("\n".join(out))
+        print("\n".join(out))
     return availabilities
 
 
