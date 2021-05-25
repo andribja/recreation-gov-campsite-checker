@@ -1,7 +1,6 @@
 #!/bin/sh
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
-# Path to git repo
-cd ~/recreation-gov-campsite-checker
 for file in params/*
 do
     # Source params file
@@ -13,7 +12,7 @@ do
     then
         echo "RESULTS FOUND - "`date`
         # Email result
-        cat result.txt | /usr/bin/mail -s "Campsite" $EMAIL
+        cat result.txt | /usr/bin/mail -s campsite $EMAIL
     else
         echo "NO RESULTS FOUND - "`date`;
     fi;

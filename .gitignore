@@ -9,3 +9,4 @@ __pycache__
 parks.txt
 result.txt
 params/*
+tour_params/*
